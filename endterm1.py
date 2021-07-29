@@ -34,13 +34,13 @@ score = 0
 is_touched = False
 
 
-for _ in range(50):
+for i in range(50):
     red_block_x = random.randint(0, WIN_WIDTH)
     red_block_y = random.randint(-WIN_HEIGHT / 2, WIN_HEIGHT / 2)
     red_block_rect = pg.Rect((red_block_x, red_block_y, 20, 15))
     red_block_list.append((screen, RED, red_block_rect))
 
-for _ in range(10):
+for i in range(10):
     green_block_x = random.randint(0, WIN_WIDTH)
     green_block_y = random.randint(0, WIN_HEIGHT / 2)
     green_block_rect = pg.Rect((green_block_x, green_block_y, 20, 15))
